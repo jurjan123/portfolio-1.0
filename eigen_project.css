@@ -1,0 +1,204 @@
+@font-face {
+    font-family: NunitoRegular;
+    src: url(../fonts/Nunito-Regular.ttf);
+}
+
+@font-face{
+    font-family: NunitoExtraBold;
+    src: url(../fonts/Nunito-ExtraBold.ttf);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+html,
+body{
+    font-family: Nunito-Regular, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #36B233;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 5vw;
+    padding: 10px 30px;
+    background-color: darkgreen;
+    justify-content: space-between;
+    
+}
+
+nav .logo{
+    color: cyan;
+    text-shadow: 1px 1px 1px #000000;
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+a:link { 
+    text-decoration: none; 
+    color: cyan;
+}
+
+
+a:visited { 
+    text-decoration: none;
+    color: cyan;
+
+}
+
+
+a:hover { 
+    text-decoration: none; 
+    color: white;
+
+}
+
+
+a:active { 
+    text-decoration: none; 
+    color: cyan;
+}
+.hover1:hover{
+    color: white;
+}
+
+.hover{
+    position: absolute;
+    text-decoration: none;
+}
+
+.hover2:hover{
+    color: cyan;
+    text-decoration: none;
+}
+
+#hover3 a:hover{
+    color: white;
+}
+
+#hover3 a{
+    text-decoration: none;
+    color: cyan;
+}
+
+.referentie{
+    display: flex;
+    color: cyan;
+    padding-top: 20px;
+    margin-right: 10px;
+    align-content: right;
+    word-spacing: 1.5px;
+    
+}
+
+.hoi{
+    border: 5px blue;
+    background-color: pink;
+}
+
+.foto{
+    width: 400px;
+    height: 400px;
+    margin-left: 200px;
+    margin-top: 200px;
+}
+
+.foto2{
+    margin-left: 200px;
+    width: 400px;
+    height: 400px;
+    margin-top: 200px;
+}
+
+.foto3{
+    margin-left: 200px;
+    width: 400px;
+    height: 400px;
+    margin-top: 200px;
+}
+
+.foto4{
+    margin-left: 200px;
+    width: 400px;
+    height: 400px;
+    margin-top: 200px;
+}
+
+
+.fotos{
+    margin-bottom: -350px;
+    background-color: #499D6B;
+    width: 800px;
+    height: 2600px;
+    margin-left: 750px;
+}
+
+.jur1{
+    padding-bottom: 800px;
+}
+
+
+
+#contact{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 100px;
+    margin-left: 70px;
+    width: 100px;
+    height: 100px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+
+.contact1{
+    margin: inherit;
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 75px;
+}
+
+.contact2{
+    width: 50px;
+    height: 50px;
+    margin-top: 75px;
+    
+}
+
+.contact4{
+    margin-right: -50px;
+}
+.footer{
+    height: 130px;
+    width: 1550px;
+    margin-top: 100px;
+    left: 0px;
+    top: 1796px;
+    border-radius: 0px;
+    background-color: #F0CC3A;
+
+}
+
