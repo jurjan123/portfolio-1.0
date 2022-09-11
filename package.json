@@ -1,0 +1,22 @@
+{
+  "name": "eigen_project",
+  "version": "1.0.0",
+  "description": "aangepaste portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jurjan123/portfolio-1.0.git"
+  },
+  "author": "jureplure",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jurjan123/portfolio-1.0/issues"
+  },
+  "homepage": "https://github.com/jurjan123/portfolio-1.0#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}

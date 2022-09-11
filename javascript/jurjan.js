@@ -1,16 +1,38 @@
-//window.alert("welkom op mijn portfolio")
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+  
+  var el = document.getElementById("naam")
+  el.addEventListener("click", function(){
+    $("#naam").css("color", getRandomColor());
 
-function setup(){
-    var textInput;
-    textInput = document.querySelector(".footer");
-    textInput.focus()
+  })
+  
+  let img = document.querySelector("#myface img")
+  let slideShowImages = [
+    "../img/pimgezicht.jpg",
+    "../chillhop/Schermopname (164).png",
+    "../chillhop/Schermopname (193).png",
+    "../chillhop/Schermopname (189).png",
+    "../chillhop/Schermopname (190).png",
+  ]
 
-}
+  let current_slideshow_image = 0
 
-window.addEventListener("DOMcontentloaded", setup, false)
+  setInterval(slideShow, 4000)
 
-window.addEventListener("beforeunload", function(event){
-    var message = "you have changes that have not been saved"
-    (event || window.event).returnValue = message;
-    return message;
-}, false)
+  function slideShow(){
+    console.log(current_slideshow_image)
+    if(current_slideshow_image == 4){
+      current_slideshow_image = 0
+    } else{
+      current_slideshow_image++
+    
+    img.src = slideShowImages[current_slideshow_image]
+    }
+  }
