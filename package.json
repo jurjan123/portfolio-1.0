@@ -18,5 +18,8 @@
   "homepage": "https://github.com/jurjan123/portfolio-1.0#readme",
   "dependencies": {
     "bootstrap": "^5.2.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
   }
 }
