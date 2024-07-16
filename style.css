@@ -16,9 +16,14 @@ html,
 body{
     font-family: 'Litterbox', sans-serif;
     scroll-behavior: smooth;
-    background-image: url("myphotos/20220612_151152.jpg");
-    
-   
+    background-image: url("myphotos/20220612_151152.jpg"); 
+}
+
+.bg-image-1 {
+    background-image: url('myphotos/20240124171538_IMG_0668.JPG') ;
+}
+.bg-image-2 {
+    background-image: url('myphotos/thumbnail_20221229_152011.jpg') ;
 }
 
 @keyframes bounce {

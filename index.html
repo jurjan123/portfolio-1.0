@@ -14,7 +14,7 @@
       
     </style>
 </head>
-<body class="flex flex-col  min-h-screen  ">
+<body class="flex flex-col  min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white"  id="backgroundDiv" class="bg-image-1" class="bg-image-2">
   <nav class="p-4 text-2xl   text-white gap-8">
     <ul class="flex flex-col sm:flex-row gap-5 items-center gap-x-12 px-24 text-4xl py-4">
       <li class="text-5xl pr-8"><a href="#home" id="naam">Jur Jansonius</a></li>
@@ -23,27 +23,35 @@
       <li class="hover:underline"><a href="#projects">Projecten</a></li>
       <li class="hover:underline"><a href="#vaardigheden">Vaardigheden</a></li>
       <li class="hover:underline"><a href="#contact">Contact</a></li>
+      <div>
+        <button id="theme-toggle" class="p-2 ml-60 text-black bg-white dark:bg-gray-800 dark:text-white rounded" >
+            Toggle Dark Mode
+        </button>
+    </div>
     </ul>
+
+    
   </nav>
 
   <main class="flex-grow ml-24 mr-28">
     <section class="py-8" id="shortInfo">
       <div class="flex flex-col md:flex-row p-4">
         <!-- Text Section -->
-        <div class="md:w-2/3  h-80  p-4 bg-black bg-opacity-50 text-white rounded-lg shadow-lg">
+        <div class="md:w-2/3  h-96  p-4 bg-black bg-opacity-50 text-white rounded-lg shadow-lg" >
             <p class="text-2xl md:text-4xl font-bold  ">
                 Hallo. Ik ben Jur Jansonius, ik ben 20 jaar oud en ik woon in Leek.
                 Ik ben een enthousiaste software developer op de Alfa-College in groningen die graag problemen in software wil oplossen. Ik ben in september 2020 begonnen met de opleiding: Expert IT systems and devices en ben na 1 jaar afgehaakt.
-                Hedendaags doe ik de Software Developer technical opleiding en hou ik mij vooral bezig met laravel, maar heb over de afgelopen 2 jaren met veel diverse technieken gewerkt.<br>
-                Deze portfolio is gemaakt met laravel, html, css en tailwindcss
-
+                
+            </p>
+            <p class="text-2xl md:text-4xl font-bold mt-4">Hedendaags doe ik de Software Developer technical opleiding en hou ik mij vooral bezig met laravel, maar heb over de afgelopen 2 jaren met veel diverse technieken gewerkt.
+              Deze portfolio is gemaakt met laravel, html, css en tailwindcss
             </p>
         </div>
 
        
         <!-- Image Section -->
         <div class="md:w-1/3 pl-4 flex justify-center">
-            <img src="myphotos/IMG-20230427-WA0000.jpg" alt="Background Image" class="w-full h-80 rounded-md shadow-lg">
+            <img src="myphotos/IMG-20230427-WA0000.jpg" alt="Background Image" class="w-full h-96 rounded-md shadow-lg">
         </div>
     </div>
     </section>
@@ -124,7 +132,7 @@
     </div>
     </section>
 
-      <section class="mt-6 mb-20 pl-4" id="projects">
+      <section class="mb-20 pl-4" id="projects">
       <h1 class="text-6xl text-center">Mijn projecten</h1>
       <div class="grid grid-cols-3 text-white gap-x-10 gap-y-16  py-4">
         <div class="bg-black bg-opacity-40   rounded-md " >
@@ -166,7 +174,7 @@
       </section>
 
 
-      <section class="pb-10" id="shortInfo">
+      <section class="pb-10 -mt-10" id="shortInfo">
         <h1 class="text-6xl text-center text-white mb-4" id="vaardigheden">Vaardigheden</h1>
         <div class="space-y-4 w-1/2 mx-auto ">
           <!-- HTML Progress Bar -->

@@ -44,7 +44,36 @@ function getRandomColor() {
     img.src = slideShowImages[current_slideshow_image]
     }
   }
+  document.addEventListener('DOMContentLoaded', function () {
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
 
+    // Load the preferred theme on initial load
+    if (localStorage.getItem('theme') === 'dark') {
+        htmlElement.classList.add('dark');
+    } else {
+        htmlElement.classList.remove('dark');
+    }
+
+    themeToggleBtn.addEventListener('click', function () {
+      var backgroundDiv = document.getElementById('backgroundDiv');
+        if (htmlElement.classList.contains('dark')) {
+            backgroundDiv.classList.toggle('bg-image-2');
+            htmlElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        } else {
+            htmlElement.classList.add('dark');
+            backgroundDiv.classList.toggle('bg-image-1');
+            localStorage.setItem('theme', 'dark');
+        }
+
+       
+        
+        
+
+
+    });
+});
   
 
 console.log(screen.availWidth, screen.availHeight)
