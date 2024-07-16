@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mijn website</title>
+    <title>Jur Jansonius</title>
     <link rel="stylesheet" href="style.css">
     <link href="output.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -17,10 +17,10 @@
 <body class="flex flex-col  min-h-screen  ">
   <nav class="p-4 text-2xl   text-white gap-8">
     <ul class="flex flex-col sm:flex-row gap-5 items-center gap-x-12 px-24 text-4xl py-4">
-      <li class="text-5xl pr-8"><a href="#home" id="naam">Jur jansonius</a></li>
+      <li class="text-5xl pr-8"><a href="#home" id="naam">Jur Jansonius</a></li>
       <li class="hover:underline "><a href="#home">Over mij</a></li>
-      <li class="hover:underline"><a href="#about">Hobbies</a></li>
-      <li class="hover:underline"><a href="#projects">Projecten</a></li>
+      <li class="hover:underline"><a href="#about">Projecten</a></li>
+      <li class="hover:underline"><a href="#projects">Hobbies</a></li>
       <li class="hover:underline"><a href="#blog">Vaardigheden</a></li>
       <li class="hover:underline"><a href="#contact">Contact</a></li>
     </ul>
@@ -30,7 +30,7 @@
     <section class="py-8" id="shortInfo">
       <div class="flex flex-col md:flex-row p-4">
         <!-- Text Section -->
-        <div class="md:w-2/3 p-4 bg-black bg-opacity-50 text-white rounded-lg shadow-lg">
+        <div class="md:w-2/3  h-64 p-4 bg-black bg-opacity-50 text-white rounded-lg shadow-lg">
             <p class="text-2xl md:text-4xl font-bold">
                 Hallo. Ik ben Jur Jansonius, ik ben 20 jaar oud en ik woon in Leek.
                 Ik doe de opleiding Software Development op de Alfa-college.
@@ -41,45 +41,91 @@
         
         <!-- Image Section -->
         <div class="md:w-1/3 pl-4 flex justify-center">
-            <img src="img/pimgezicht.jpg" alt="Background Image" class="w-full h-full rounded-md shadow-lg">
+            <img src="myphotos/IMG-20230427-WA0000.jpg" alt="Background Image" class="w-full h-64 rounded-md shadow-lg">
         </div>
     </div>
     </section>
 
-      <section class="mt-6 mb-20" id="projects">
+      <section class="mt-6 mb-20 pl-4" id="projects">
       <h1 class="text-6xl text-center">Mijn projecten</h1>
       <div class="grid grid-cols-3 text-white gap-x-10 gap-y-16  py-4">
         <div class="bg-black bg-opacity-40   rounded-md " >
-          <img src="img/Schermopname (116).png" class="h-44 w-full" alt="" srcset="">
+          <img src="img/Schermopname (116).png" class="h-44 w-full rounded-md" alt="" srcset="">
           <h1 class="text-5xl mt-2 ml-2">Laravelblog & Webshop</h1>
           <h1 class="text-3xl mt-2 ml-2 mb-2">Langdurig project met laravel</h1>
+          <button class="bg-green-600 p-3 mb-4 ml-2 rounded-md text-black text-3xl hover:text-white hover:bg-green-500">Bekijk project</button>
         </div>
         <div class="bg-black bg-opacity-40 rounded-md border-black" >
-          <img src="img/Schermopname (75).png" class="h-44 w-full" alt="" srcset="">
+          <img src="img/Schermopname (76).png" class="h-44 w-full rounded-md" alt="" srcset="">
           <h1 class="text-5xl mt-2 ml-2">Webshop 2.0</h1>
           <h1 class="text-3xl mt-2 ml-2 mb-2">Betere webshop met php (nog steeds slecht)</h1>
+          <button class="bg-green-600 p-3 mb-4 ml-2 rounded-md text-black text-3xl hover:text-white hover:bg-green-500">Bekijk project</button>
         </div>
         <div class="bg-black bg-opacity-40 rounded-md border-black" >
-          <img src="img/Schermopname (75).png" class="h-44 w-full" alt="" srcset="">
+          <img src="img/Schermopname (75).png" class="h-44 w-full rounded-md" alt="" srcset="">
           <h1 class="text-5xl mt-2 ml-2">Webshop 1.0</h1>
           <h1 class="text-3xl mt-2 ml-2 mb-2">Eerste webshop gemaakt in php</h1>
+          <button class="bg-green-600 p-3 mb-4 ml-2 rounded-md text-black text-3xl hover:text-white hover:bg-green-500">Bekijk project</button>
         </div>
         <div class="bg-black bg-opacity-25 rounded-md border-black" >
-          <img src="img/Schermopname (75).png" class="h-44 w-full" alt="" srcset="">
+          <img src="img/Schermopname (106).png" class="h-44 w-full rounded-md" alt="" srcset="">
           <h1 class="text-5xl mt-2 ml-2">Flappy bird game</h1>
           <h1 class="text-3xl mt-2 ml-2 mb-2">Eerste game. Gemaakt met javascript</h1>
+          <button class="bg-green-600 p-3 mb-4 ml-2 rounded-md text-black text-3xl hover:text-white hover:bg-green-500">Bekijk project</button>
         </div>
         <div class="bg-black bg-opacity-25 rounded-md border-black" >
-          <img src="img/Schermopname (75).png" class="h-44 w-full" alt="" srcset="">
+          <img src="img/irritantewebsite.png" class="h-44 w-full rounded-md" alt="" srcset="">
           <h1 class="text-5xl mt-2 ml-2">Irritante website</h1>
           <h1 class="text-3xl mt-2 ml-2 mb-2">Erg irritant</h1>
+          <button class="bg-green-600 p-3 mb-4 ml-2 rounded-md text-black text-3xl hover:text-white hover:bg-green-500">Bekijk project</button>
         </div>
         <div class="bg-black bg-opacity-25 rounded-md border-black" >
-          <img src="img/Schermopname (75).png" class="h-44 w-full" alt="" srcset="">
+          <img src="img/portfolio.png" class="h-44 w-full rounded-md" alt="" srcset="">
           <h1 class="text-5xl mt-2 ml-2">Portfolio 1.0</h1>
           <h1 class="text-3xl mt-2 ml-2 mb-2">Waar het allemaal begon</h1>
+          <button class="bg-green-600 p-3 mb-4 ml-2 rounded-md text-black text-3xl hover:text-white hover:bg-green-500">Bekijk project</button>
         </div>
       </section>
+
+
+      <section class="pb-10 items-center" id="shortInfo">
+        <h1 class="text-6xl text-center mb-4" id="Vaardigheden">Vaardigheden</h1>
+        <div class="space-y-4 w-1/2 items-center">
+          <!-- HTML Progress Bar -->
+          <div class="bg-gray-400 rounded overflow-hidden">
+            <div class="bg-gray-900 text-white text-5xl font-bold leading-none py-2 pl-2 w-5/6">Laravel</div>
+        </div>
+          <div class="bg-gray-400 rounded overflow-hidden">
+              <div class="bg-gray-800 text-white text-5xl font-bold leading-none py-2 pl-2 w-4/6">HTML en CSS</div>
+          </div>
+          <div class="bg-gray-400 rounded overflow-hidden">
+            <div class="bg-gray-600 text-white text-5xl font-bold leading-none py-2 pl-2 w-4/6">Tailwind</div>
+        </div>
+          <!-- CSS Progress Bar -->
+          <div class="bg-gray-400 rounded overflow-hidden">
+            <div class="bg-gray-600 text-white text-5xl font-bold leading-none py-2 pl-2 w-3/6">Bootstrap</div>
+        </div>
+          <!-- JS Progress Bar -->
+          <div class="bg-gray-400 rounded overflow-hidden">
+              <div class="bg-gray-600 text-white text-5xl font-bold leading-none py-2 pl-2 w-2/6">JS</div>
+          </div>
+          
+
+        
+      <div class="bg-gray-400 rounded overflow-hidden">
+        <div class="bg-gray-600 text-white text-5xl font-bold leading-none py-2 pl-2 w-2/6">Linux</div>
+    </div>
+          <div class="bg-gray-400 rounded overflow-hidden">
+            <div class="bg-gray-600 text-white text-4xl font-bold leading-none py-2 pl-2 w-2/6">Nodejs en Express</div>
+        </div>
+        <div class="bg-gray-400 rounded overflow-hidden">
+          <div class="bg-gray-600 text-white text-5xl font-bold leading-none py-2 pl-2 w-1/6">Wordpress</div>
+      </div>
+          <!-- PHP Progress Bar -->
+          
+      </div>
+      </section>
+  
 </main>
       
         <footer class="  px-20 py-3 flex flex-col gap-x-9 justify-center text-center text-white" id="contact">
@@ -90,7 +136,7 @@
           <a href="https://github.com/jurjan123" target="_blank"><img src="img/github.svg" width="48" height="48" id="social-logos"></a>
           <a href="mailto:jansoniusjur@gmail.com" target="_blank"><img src="img/gmail.svg" width="48px"  height="48px"></a>
           </div>
-          <p class="text-3xl">&copy JurJansonius. All rights reserved</p>
+          <p class="text-3xl">&copy 2024 Copyright JurJansonius. Alle rechten voorbehouden</p>
         </footer>
     
       <script src="jurjan.js"></script>
