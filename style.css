@@ -1,25 +1,102 @@
-@font-face {
-    font-family: NunitoRegular;
-    src: url(../fonts/Nunito-Regular.ttf);
-}
-
-@font-face{
-    font-family: NunitoExtraBold;
-    src: url(../fonts/Nunito-ExtraBold.ttf);
-}
-
-
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Litterbox';
+    src: url("/fonts/Litterbox\ ICG\ Regular/Litterbox ICG Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 html,
 body{
-    font-family: Nunito-Regular, sans-serif;
+    font-family: 'Litterbox', sans-serif;
     scroll-behavior: smooth;
-    background-image: url("myphotos/20220612_151152.jpg")
+    background-image: url("myphotos/20220612_151152.jpg");
+    
+   
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.animate-bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes blink {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        opacity: 1;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        opacity: 0;
+    }
+}
+
+.animate-blink {
+    animation: blink 2s infinite;
+}
+
+@keyframes move-book {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.animate-move-book {
+    animation: move-book 1.5s infinite;
+}
+
+@keyframes pingpong {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animate-pingpong {
+    animation: pingpong 2s infinite;
+}
+
+@keyframes move-ball {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(300px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes move-player {
+    0% { transform: translateX(-50px); }
+    50% { transform: translateX(50px); }
+    100% { transform: translateX(-50px); }
+}
+
+.animate-ball {
+    animation: move-ball 3s infinite linear;
+}
+
+.animate-player {
+    animation: move-player 3s infinite linear;
 }
 
 #logo:hover{
