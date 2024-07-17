@@ -44,48 +44,53 @@ function getRandomColor() {
     img.src = slideShowImages[current_slideshow_image]
     }
   }
+  
   document.addEventListener('DOMContentLoaded', function () {
     const themeToggleBtn = document.getElementById('theme-toggle');
     const htmlElement = document.documentElement;
 
-    // Load the preferred theme on initial load
-    if (localStorage.getItem('theme') === 'dark') {
-        htmlElement.classList.add('dark');
-    } else {
-        htmlElement.classList.remove('dark');
-    }
-
+    // Toggle the background and button text on click
     themeToggleBtn.addEventListener('click', function () {
-      var bodyElement = document.body;
-            if (bodyElement.classList.contains('bg-image-1')) {
-                bodyElement.classList.remove('bg-image-1');
-                bodyElement.classList.add('bg-image-2');
-            } else if (bodyElement.classList.contains('bg-image-2')) {
-                bodyElement.classList.remove('bg-image-2');
-                bodyElement.classList.add('bg-image-3');
-            } else if (bodyElement.classList.contains('bg-image-3')) {
-                bodyElement.classList.remove('bg-image-3');
-                bodyElement.classList.add('bg-image-1');
-            }
-       
-      var backgroundDiv = document.getElementById('backgroundDiv');
+        var bodyElement = document.body;
+
+        /*if (bodyElement.classList.contains('bg-image-1')) {
+            bodyElement.classList.remove('bg-image-1');
+            bodyElement.classList.add('bg-image-2');
+            themeToggleBtn.innerHTML = "Lichtere modus";
+        } else if (bodyElement.classList.contains('bg-image-2')) {
+            bodyElement.classList.remove('bg-image-2');
+            bodyElement.classList.add('bg-image-3');
+            themeToggleBtn.innerHTML = "Donkere modus";
+        } else if (bodyElement.classList.contains('bg-image-3')) {
+            bodyElement.classList.remove('bg-image-3');
+            bodyElement.classList.add('bg-image-1');
+            themeToggleBtn.innerHTML = "Lichtere modus";
+        }*/
+
+        // Toggle dark mode class
         if (htmlElement.classList.contains('dark')) {
             htmlElement.classList.remove('dark');
             localStorage.setItem('theme', 'light');
-           
+            bodyElement.classList.remove('bg-image-2');
+            bodyElement.classList.add('bg-image-1');
+            themeToggleBtn.innerHTML = "Donkere modus";
         } else {
             htmlElement.classList.add('dark');
             localStorage.setItem('theme', 'dark');
-            backgroundDiv.classList.toggle('bg-image-1');
-            
+            bodyElement.classList.remove('bg-image-1');
+            bodyElement.classList.add('bg-image-2');
+            themeToggleBtn.innerHTML = "Lichtere modus";
         }
-
-       
-        
-        
-
-
     });
+
+    // Load the preferred theme on initial load
+    /*if (localStorage.getItem('theme') === 'dark') {
+        htmlElement.classList.add('dark');
+        themeToggleBtn.innerHTML = "Lichtere modus";
+    } else {
+        htmlElement.classList.remove('dark');
+        themeToggleBtn.innerHTML = "Donkere modus";
+    }*/
 });
   
 
