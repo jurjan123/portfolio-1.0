@@ -56,15 +56,28 @@ function getRandomColor() {
     }
 
     themeToggleBtn.addEventListener('click', function () {
+      var bodyElement = document.body;
+            if (bodyElement.classList.contains('bg-image-1')) {
+                bodyElement.classList.remove('bg-image-1');
+                bodyElement.classList.add('bg-image-2');
+            } else if (bodyElement.classList.contains('bg-image-2')) {
+                bodyElement.classList.remove('bg-image-2');
+                bodyElement.classList.add('bg-image-3');
+            } else if (bodyElement.classList.contains('bg-image-3')) {
+                bodyElement.classList.remove('bg-image-3');
+                bodyElement.classList.add('bg-image-1');
+            }
+       
       var backgroundDiv = document.getElementById('backgroundDiv');
         if (htmlElement.classList.contains('dark')) {
-            backgroundDiv.classList.toggle('bg-image-2');
             htmlElement.classList.remove('dark');
             localStorage.setItem('theme', 'light');
+           
         } else {
             htmlElement.classList.add('dark');
-            backgroundDiv.classList.toggle('bg-image-1');
             localStorage.setItem('theme', 'dark');
+            backgroundDiv.classList.toggle('bg-image-1');
+            
         }
 
        
